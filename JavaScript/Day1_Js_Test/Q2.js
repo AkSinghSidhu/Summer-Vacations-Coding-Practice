@@ -2,15 +2,15 @@
 
 let num1 = 10, num2 = 20;
 
-sum = num1 + num2;
-difference = num1 - num2;
-product = num1 * num2;
-remainder = num1 % num2;
-power = num1 ** num2;
+const sum = num1 + num2;
+const difference = num1 - num2;
+const product = num1 * num2;
+const remainder = num1 % num2;
+const power = num1 ** num2;
 
 console.log(`Sum: ${sum}, Difference: ${difference}, Product: ${product}, Remainder: ${remainder}, Power: ${power}`);
 
 let isGreater = sum > 50;
-let isEven = product % 2 == 0;
+let isEven = product % 2 === 0;
 
 console.log(`Is the sum greater than 50?: ${isGreater} & Is the product even?: ${isEven}`);
