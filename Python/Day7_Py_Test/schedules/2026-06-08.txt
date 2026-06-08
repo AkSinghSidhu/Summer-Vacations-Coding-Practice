@@ -1,0 +1,35 @@
+Monday 2026-06-08
+	Morning: JavaScript
+	Afternoon: Python
+	Evening: Node.js
+
+Tuesday 2026-06-09
+	Morning: DSA
+	Afternoon: DSA
+	Evening: JavaScript
+
+Wednesday 2026-06-10
+	Morning: DSA
+	Afternoon: Python
+	Evening: JavaScript
+
+Thursday 2026-06-11
+	Morning: Python
+	Afternoon: Python
+	Evening: JavaScript
+
+Friday 2026-06-12
+	Morning: DSA
+	Afternoon: Python
+	Evening: JavaScript
+
+Saturday 2026-06-13
+	Morning: Node.js
+	Afternoon: DSA
+	Evening: Flask
+
+Sunday 2026-06-14
+	Morning: DSA
+	Afternoon: Node.js
+	Evening: Flask
+
