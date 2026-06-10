@@ -1,0 +1,7 @@
+Students Data
+Akash,22,Delhi
+Supan,20,Bathinda
+Diljeet,21,Talwandi
+Gurinder,22,Jodhpur
+Parshant,19,Mansa
+Harpreet,22,Maur

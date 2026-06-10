@@ -1,0 +1,19 @@
+Summary
+
+Files with their sizes:
+	File Size of journal.txt: 126 Kb
+	File Size of students.txt: 122 Kb
+	File Size of filtered.txt: 86 Kb
+	File Size of chainProblem.txt: 4 Kb
+	File Size of chainProblemOutput.txt: 19 Kb
+	File Size of summary.md: 14 Kb
+	File Size of random.md: 30 Kb
+
+Extension Count:
+	.txt: 5 files
+	.md: 2 files
+
+3 Largest Files:
+	journal.txt: 126 Kb
+	students.txt: 122 Kb
+	filtered.txt: 86 Kb
