@@ -1,0 +1,22 @@
+Wednesday:
+  - notes.txt
+  - script.py
+
+Tuesday:
+  - app.js
+  - readme.md
+
+Monday:
+  - data.csv
+  - config.txt
+
+Sunday:
+  - test.py
+  - index.html
+
+Saturday:
+  - styles.css
+
+Friday:
+  - report.txt
+
