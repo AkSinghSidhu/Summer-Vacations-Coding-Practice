@@ -1,0 +1,8 @@
+[ERROR] database timeout
+[INFO] user logged out
+[WARNING] high memory
+[ERROR] connection failed
+[INFO] backup completed
+[ERROR] null pointer exception
+[WARNING] disk space low
+[INFO] server started

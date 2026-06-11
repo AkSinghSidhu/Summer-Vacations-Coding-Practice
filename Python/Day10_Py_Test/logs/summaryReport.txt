@@ -1,0 +1,41 @@
+Files found in logs:
+	file1.txt
+	file2.txt
+	file3.txt
+	summaryReport.txt
+
+All types of issues in log files:
+	[INFO] server started
+	[INFO] user logged in
+	[ERROR] connection failed
+	[WARNING] high memory
+	[ERROR] connection failed
+	[INFO] request processed
+	[ERROR] database timeout
+	[WARNING] disk space low
+	[ERROR] connection failed
+	[INFO] server started
+	[ERROR] null pointer exception
+	[WARNING] high memory
+	[INFO] cache cleared
+	[ERROR] connection failed
+	[ERROR] database timeout
+	[INFO] user logged out
+	[WARNING] high memory
+	[ERROR] connection failed
+	[INFO] backup completed
+	[ERROR] null pointer exception
+	[WARNING] disk space low
+	[INFO] server started
+
+Counts of Each type of issue:
+	[INFO]: 8
+	[ERROR]: 9
+	[WARNING]: 5
+
+Counts of Error types:
+	[ERROR] connection failed: 5
+	[ERROR] database timeout: 2
+	[ERROR] null pointer exception: 2
+
+Most Repeating Error Message: [ERROR] connection failed

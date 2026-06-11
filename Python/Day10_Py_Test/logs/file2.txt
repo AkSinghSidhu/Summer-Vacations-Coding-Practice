@@ -1,0 +1,7 @@
+[WARNING] disk space low
+[ERROR] connection failed
+[INFO] server started
+[ERROR] null pointer exception
+[WARNING] high memory
+[INFO] cache cleared
+[ERROR] connection failed
