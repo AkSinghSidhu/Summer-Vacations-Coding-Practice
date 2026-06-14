@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "Wireless Mouse",
+        "price": 799,
+        "category": "Electronics",
+        "in_stock": true
+    },
+    {
+        "id": 3,
+        "name": "Water Bottle",
+        "price": 299,
+        "category": "Home",
+        "in_stock": false
+    },
+    {
+        "id": 4,
+        "name": "Running Shoes",
+        "price": 2499,
+        "category": "Sports",
+        "in_stock": true
+    },
+    {
+        "id": 5,
+        "name": "Notebook",
+        "price": 99,
+        "category": "Stationery",
+        "in_stock": true
+    },
+    {
+        "id": 6,
+        "name": "Bluetooth Speaker",
+        "price": 1899,
+        "category": "Electronics",
+        "in_stock": false
+    },
+    {
+        "id": 7,
+        "name": "Desk Lamp",
+        "price": 649,
+        "category": "Home",
+        "in_stock": true
+    },
+    {
+        "id": 8,
+        "name": "Coffee Mug",
+        "price": 199,
+        "category": "Kitchen",
+        "in_stock": true
+    },
+    {
+        "id": 9,
+        "name": "Backpack",
+        "price": 1299,
+        "category": "Accessories",
+        "in_stock": false
+    },
+    {
+        "id": 10,
+        "name": "USB-C Cable",
+        "price": 249,
+        "category": "Electronics",
+        "in_stock": true
+    },
+    {
+        "id": 19,
+        "name": "Meth",
+        "price": 99999,
+        "category": "Drugs",
+        "in_stock": true
+    }
+]
