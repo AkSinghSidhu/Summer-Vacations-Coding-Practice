@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "phone": "9876543210",
+    "city": "Delhi"
+  },
+  {
+    "id": 2,
+    "phone": "9123456789",
+    "city": "Mumbai"
+  },
+  {
+    "id": 3,
+    "phone": "9988776655",
+    "city": "Bangalore"
+  },
+  {
+    "id": 7,
+    "phone": "9012345678",
+    "city": "Chennai"
+  },
+  {
+    "id": 8,
+    "phone": "9090909090",
+    "city": "Pune"
+  },
+  {
+    "id": 9,
+    "phone": "8888888888",
+    "city": "Hyderabad"
+  }
+]

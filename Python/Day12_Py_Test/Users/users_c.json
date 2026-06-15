@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "age": 25,
+    "is_active": true
+  },
+  {
+    "id": 2,
+    "age": 31,
+    "is_active": false
+  },
+  {
+    "id": 3,
+    "age": 28,
+    "is_active": true
+  },
+  {
+    "id": 10,
+    "age": 22,
+    "is_active": true
+  },
+  {
+    "id": 11,
+    "age": 35,
+    "is_active": false
+  },
+  {
+    "id": 12,
+    "age": 29,
+    "is_active": true
+  }
+]
