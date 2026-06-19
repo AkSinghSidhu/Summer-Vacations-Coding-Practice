@@ -1,0 +1,41 @@
+Files present in Folder 1:
+	index.html
+	styles.css
+	script.py
+	readme.md
+	config.txt
+	app.js
+	notes.txt
+	data.csv
+
+Files present in Folder 2:
+	index.html
+	styles.css
+	script.py
+	readme.md
+	config.txt
+	test.py
+	app.js
+	notes.txt
+	data.csv
+
+New Files in folder 1 and yet to be synced:
+
+Deleted files in folder 1:
+	test.py : 5 Kb
+
+Common files in folders:
+	index.html : 9 Kb
+	styles.css : 5 Kb
+	script.py : 5 Kb
+	readme.md : 1 Kb
+	config.txt : 5 Kb
+	app.js : 5 Kb
+	notes.txt : 5 Kb
+	data.csv : 8 Kb
+
+Changed files in folder 1:
+	index.html : 9 Kb
+	data.csv : 8 Kb
+
+Already Synced
