@@ -23,4 +23,4 @@ for word in words:
     key = word[0]
     defDict[key].append(word)
 
-print(defDict)
+print(dict(defDict))
