@@ -14,4 +14,4 @@ print(val1)
 val2 = fib(1000)
 print(val2)
 
-# "val2" would be calculated sognificantly faster as fib(999) is already stored in cache and isnt being calculated again and is simply reusing the "val1"
+# "val2" would be calculated significantly faster as fib(999) is already stored in cache and isnt being calculated again and is simply reusing the "val1"
