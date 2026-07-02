@@ -1,0 +1,6 @@
+[WARNING] Low disk space detected.
+[ERROR] Failed to connect to payment gateway.
+[ERROR] Invalid username or password.
+[WARNING] High memory usage detected.
+[ERROR] File not found: report.csv
+[WARNING] CPU temperature is high.
