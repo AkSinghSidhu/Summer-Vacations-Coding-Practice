@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Info</title>
+</head>
+<body>
+    <h1>Hi {{ username }}</h1>
+    <h2>Uid: {{uid}}</h2>
+    <h2>Class: {{course}}</h2>
+    <h2>Subjects: </h2>
+    {% if subjects %}
+        <ul>
+        {% for subject in subjects %}
+            <li>{{subject}}</li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>You have no subjects</p>
+    {% endif %}
+</body>
+</html>
