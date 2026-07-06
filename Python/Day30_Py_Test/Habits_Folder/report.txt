@@ -1,13 +1,106 @@
 coding
 Dates on which task done:
+	2026-06-20
+	2026-06-21
+	2026-06-22
+	2026-06-24
+	2026-06-25
+	2026-06-26
+	2026-06-27
+	2026-06-29
+	2026-06-30
+	2026-07-01
+	2026-07-02
+	2026-07-03
 	2026-07-05
+	2026-07-06
 
-Current streak: 1
-Total Completions: 1
+Current streak: 2
+Total Completions: 14
 
 video editing
 Dates on which task done:
+	2026-06-21
+	2026-06-22
+	2026-06-23
+	2026-06-24
+	2026-06-26
+	2026-06-27
+	2026-06-28
+	2026-06-30
+	2026-07-01
+	2026-07-02
+	2026-07-03
 	2026-07-05
+	2026-07-06
+
+Current streak: 2
+Total Completions: 13
+
+reading
+Dates on which task done:
+	2026-06-19
+	2026-06-20
+	2026-06-21
+	2026-06-22
+	2026-06-23
+	2026-06-24
+	2026-06-25
+	2026-06-27
+	2026-06-28
+	2026-06-29
+	2026-06-30
+	2026-07-01
+	2026-07-02
+	2026-07-03
+	2026-07-04
+	2026-07-06
+
+Current streak: 1
+Total Completions: 16
+
+exercise
+Dates on which task done:
+	2026-06-20
+	2026-06-21
+	2026-06-23
+	2026-06-24
+	2026-06-25
+	2026-06-26
+	2026-06-28
+	2026-06-29
+	2026-06-30
+	2026-07-01
+	2026-07-02
+	2026-07-04
+	2026-07-05
+	2026-07-06
+
+Current streak: 3
+Total Completions: 14
+
+journal
+Dates on which task done:
+	2026-06-22
+	2026-06-23
+	2026-06-24
+	2026-06-25
+	2026-06-27
+	2026-06-28
+	2026-06-29
+	2026-06-30
+	2026-07-01
+	2026-07-03
+	2026-07-04
+	2026-07-05
+	2026-07-06
+
+Current streak: 4
+Total Completions: 13
+
+writing
+Dates on which task done:
+	2026-07-06
 
 Current streak: 1
 Total Completions: 1
