@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student</title>
+</head>
+<body>
+    {% for message in get_flashed_messages() %}
+        <p>{{ message }}</p>
+    {% endfor %}
+    <form method="POST">
+        <input type="text" name="name" placeholder="Name">
+        <input type="text" name="age" placeholder="Age">
+        <input type="text" name="score" placeholder="Score">
+        <button type="submit">Submit</button>
+    </form>
+
+    <form action="/">
+        <button>Go Back</button>
+    </form>
+</body>
+</html>
