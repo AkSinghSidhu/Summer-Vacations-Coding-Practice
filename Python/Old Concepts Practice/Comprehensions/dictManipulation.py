@@ -18,7 +18,9 @@ print(pinCode)
 # Given {"name": "Akash", "age": 22} — add a "city" key, update "age" to 23, delete "name". Print the final dict.
 
 myInfo = {"name": "Akash", "age": 22}
+myInfo.update({"age": 23})
 myInfo.update({"city": "Sirsa"})
+myInfo.pop("name")
 print(myInfo)
 
 # Given two dicts {"a": 1, "b": 2} and {"b": 3, "c": 4} — merge them so the second dict's values win on conflicts. Do it two ways: using update() and using {**d1, **d2}.
@@ -42,6 +44,8 @@ print(filteredScores)
 # Same dict — print each subject and score formatted as "Math: 88" (capitalize the key).
 
 print({k.capitalize(): v for k, v in subjectScores.items()})
+for k, v in subjectScores.items():
+    print(f"{k.capitalize()}: {v}")
 
 # Given {"a": 1, "b": 2, "c": 3, "d": 4, "e": 5} — build a new dict with keys and values swapped.
 
@@ -56,10 +60,10 @@ students = [
     {"name": "Bob", "age": 19, "score": 84},
     {"name": "Charlie", "age": 21, "score": 76},
     {"name": "Diana", "age": 20, "score": 95},
-    {"name": "Ethan", "age": 22, "score": 88},
+    {"name": "Ethan", "age": 22, "score": 48},
 ]
 
-print(max(students, key = lambda students: students["score"]))
+print(max(students, key = lambda student: student["score"]))
 
 # Same list — filter only students above age 20.
 
@@ -83,15 +87,74 @@ print(searchIdx)
 
 # Same list — sort by score descending.
 
-sortedScores = [sorted(students, key = lambda students: students["score"], reverse = True)]
+sortedScores = sorted(students, key = lambda student: student["score"], reverse = True)
 print(sortedScores)
 
 # Same list — group into {"passed": [...], "failed": [...]} where pass is score >= 50.
 
-passFailDict = {}
+passFailDict = {
+    "passed": [ student["name"] for student in students if student["score"] >= 50 ],
+    "failed": [ student["name"] for student in students if student["score"] < 50 ]
+}
+print(passFailDict)
 
 # Given ["apple", "banana", "apple", "cherry", "banana", "apple"] — count occurrences of each fruit using a dict (no Counter).
+
+fruits = ["apple", "banana", "apple", "cherry", "banana", "apple"]
+
+total = {}
+for fruit in fruits:
+    if fruit in total:
+        total[fruit] += 1
+    else:
+        total[fruit] = 1
+
+print(total)
+
 # Given a list of student dicts — count how many students are in each city.
+
+students = [
+    {"name": "Aman", "age": 20, "score": 88, "city": "Delhi"},
+    {"name": "Priya", "age": 19, "score": 95, "city": "Mumbai"},
+    {"name": "Rohan", "age": 21, "score": 76, "city": "Delhi"},
+    {"name": "Neha", "age": 20, "score": 91, "city": "Jaipur"},
+    {"name": "Arjun", "age": 22, "score": 84, "city": "Mumbai"},
+    {"name": "Simran", "age": 19, "score": 89, "city": "Delhi"},
+    {"name": "Karan", "age": 21, "score": 78, "city": "Jaipur"},
+    {"name": "Meera", "age": 20, "score": 93, "city": "Mumbai"},
+]
+
+eachCity = {}
+for student in students:
+
+    if student["city"] in eachCity:
+        eachCity[student["city"]] += 1
+    else:
+        eachCity[student["city"]] = 1
+    
+print(eachCity)
+
 # Given ["cat", "dog", "cat", "bird", "dog", "dog"] — find the most frequent animal without using Counter.
+
+animals = ["cat", "dog", "cat", "bird", "dog", "dog"]
+
+animalCount = {}
+for animal in animals:
+    if animal in animalCount:
+        animalCount[animal] += 1
+    else:
+        animalCount[animal] = 1
+
+mostFrequent = max(animalCount, key=lambda k: animalCount[k])
+print(mostFrequent)
+
 # Given [{"name": "Akash", "subjects": ["Math", "Physics"]}, {"name": "Priya", "subjects": ["English", "Chemistry", "Math"]}] — get all unique subjects across all students.
+
+students = [{"name": "Akash", "subjects": ["Math", "Physics"]}, {"name": "Priya", "subjects": ["English", "Chemistry", "Math"]}]
+unique_Subjects = {subject for student in students for subject in student["subjects"]}
+print(unique_Subjects)
+
 # Same data — find which student has the most subjects.
+
+hasMostSubjects = max(students, key=lambda student: len(student["subjects"]))["name"]
+print(hasMostSubjects)
