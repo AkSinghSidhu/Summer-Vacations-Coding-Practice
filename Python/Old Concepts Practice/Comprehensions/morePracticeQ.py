@@ -46,5 +46,13 @@ print(head_dept)
 logs = ["ERROR", "INFO", "ERROR", "WARNING", "INFO", "ERROR", "INFO", "INFO", "WARNING"]
 
 # Count each log level (no Counter)
+count = {level: logs.count(level) for level in set(logs)}
+print(count)
+
 # Find the most common log level
+most_common = max(count, key = lambda k: count[k])
+print(most_common)
+
 # Get all unique log levels as a set (one line)
+unique_log = {log for log in logs}
+print(unique_log)
