@@ -1,5 +1,3 @@
-# In one line each:
-
 orders = [
     {"item": "laptop", "qty": 2, "price": 45000},
     {"item": "mouse", "qty": 5, "price": 800},
@@ -56,3 +54,26 @@ print(most_common)
 # Get all unique log levels as a set (one line)
 unique_log = {log for log in logs}
 print(unique_log)
+
+
+#---------------------------------------------------------------
+
+#  1. Given "the quick brown fox jumps over the lazy dog" — build a dict of {word: length} for every word. Then find the longest word using max() with a key.
+sen_arr = "the quick brown fox jumps over the lazy dog".split()
+word_len_dict = {word: len(word) for word in sen_arr}
+print(word_len_dict)
+longest_word = max(word_len_dict, key = lambda length: word_len_dict[length])
+print(longest_word)
+
+
+#  2. Given a list of temperatures in Celsius [0, 20, 37, 100, -10, 25] — convert all to Fahrenheit in one comprehension. Also filter only temperatures above 50°F in the same step.
+
+temp_celsius = [0, 20, 37, 100, -10, 25]
+temp_fehrn = [(c * (9/5) + 32) for c in temp_celsius]
+temps_filtered = [c for c in temp_fehrn if c > 50]
+print(temp_fehrn)
+print(temps_filtered)
+
+## or if both in 1 go then:
+temp_fehrn_filtered = [(c * (9/5) + 32) for c in temp_celsius if (c * (9/5) + 32) > 50]
+print(temp_fehrn_filtered)
