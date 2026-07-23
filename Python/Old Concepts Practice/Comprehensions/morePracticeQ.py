@@ -67,7 +67,6 @@ print(longest_word)
 
 
 #  2. Given a list of temperatures in Celsius [0, 20, 37, 100, -10, 25] — convert all to Fahrenheit in one comprehension. Also filter only temperatures above 50°F in the same step.
-
 temp_celsius = [0, 20, 37, 100, -10, 25]
 temp_fehrn = [(c * (9/5) + 32) for c in temp_celsius]
 temps_filtered = [c for c in temp_fehrn if c > 50]
@@ -77,3 +76,17 @@ print(temps_filtered)
 ## or if both in 1 go then:
 temp_fehrn_filtered = [(c * (9/5) + 32) for c in temp_celsius if (c * (9/5) + 32) > 50]
 print(temp_fehrn_filtered)
+
+#  3. Given {"january": 31, "february": 28, "march": 31, "april": 30, "may": 31, "june": 30} — get months with exactly 31 days as a list. Then build a new dict with month names capitalized.
+months_dict = {"january": 31, "february": 28, "march": 31, "april": 30, "may": 31, "june": 30}
+months_31day = [k for k, v in months_dict.items() if v == 31]
+print(months_31day)
+capital_months = {k.capitalize(): v for k, v in months_dict.items()}
+print(capital_months)
+
+#  4. Given a list of strings ["hello123", "world", "python3", "code", "test99"] — separate into two lists: ones containing digits and ones that don't. Use any() with a generator inside a comprehension.
+word_list = ["hello123", "world", "python3", "code", "test99"]
+with_digits = [word for word in word_list if any(char.isdigit() for char in word)]
+print(with_digits)
+without_digits = [word for word in word_list if not any(char.isdigit() for char in word)]
+print(without_digits)
