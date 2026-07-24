@@ -90,3 +90,16 @@ with_digits = [word for word in word_list if any(char.isdigit() for char in word
 print(with_digits)
 without_digits = [word for word in word_list if not any(char.isdigit() for char in word)]
 print(without_digits)
+
+#  5. Given [1, 2, 3, 4, 5] — build a dict where each number maps to a list of its multiples up to 5x. Like {1: [1,2,3,4,5], 2: [2,4,6,8,10], ...}.
+num_list = [1, 2, 3, 4, 5]
+table_dict = {num: list(map(lambda number: number * num, num_list)) for num in num_list}
+print(table_dict)
+
+#  6. Given a paragraph of text (make one up, at least 30 words) — find all words that appear more than once. Return them as a set.
+para = "Artificial intelligence is transforming the way people work, learn, and create. From helping designers generate ideas to assisting programmers in solving complex problems, modern technology continues to open new possibilities and improve everyday experiences."
+
+words_list = [item.strip(",.") for item in para.split()]
+unique_words = set(words_list)
+reoccuring_words = {word for word in unique_words if words_list.count(word) > 1}
+print(reoccuring_words)
