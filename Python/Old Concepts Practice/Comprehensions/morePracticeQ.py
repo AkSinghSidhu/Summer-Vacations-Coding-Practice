@@ -103,3 +103,29 @@ words_list = [item.strip(",.") for item in para.split()]
 unique_words = set(words_list)
 reoccuring_words = {word for word in unique_words if words_list.count(word) > 1}
 print(reoccuring_words)
+
+# 7. Given {"fruits": ["apple", "banana", "mango"], "veggies": ["carrot", "spinach"], "grains": ["rice", "wheat", "oats"]} — flatten all items into one list. Then count total items per category as a separate dict.
+groceries_dict = {"fruits": ["apple", "banana", "mango"], "veggies": ["carrot", "spinach"], "grains": ["rice", "wheat", "oats"]}
+items_list = [item for category in groceries_dict.values() for item in category]
+print(items_list)
+count_item = {item_type: len(items) for item_type, items in groceries_dict.items()}
+print(count_item)
+
+# 8. Given a list of dicts [{"name": "Akash", "skills": ["Python", "Flask"]}, {"name": "Priya", "skills": ["React", "Python", "CSS"]}] — find all unique skills across everyone. Then find who has the most skills.
+student_skills = [{"name": "Akash", "skills": ["Python", "Flask"]}, {"name": "Priya", "skills": ["React", "Python", "CSS"]}]
+unique_skills = {skill for student in student_skills for skill in student["skills"]}
+print(unique_skills)
+
+# 9. Given [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5] — without using Counter or set(), find duplicate numbers (appear more than once) using only a dict.
+# 
+# 10. Given a string "aabbccddee" — count each character's frequency and return only characters that appear exactly twice.
+# 
+# 11. Given [{"product": "laptop", "sold": 5}, {"product": "mouse", "sold": 20}, {"product": "keyboard", "sold": 8}] — calculate total units sold, find best seller, and sort by sold descending. Three separate operations.
+# 
+# 12. Given two lists ["a", "b", "c", "d"] and [1, 2, 3, 4] — zip them into a dict. Then swap keys and values. Both in one line each.
+# 
+# 13. Given {"name": "Akash", "age": 22, "city": "Delhi", "score": 88, "active": True} — split into two dicts: one with string values only, one with non-string values only.
+# 
+# 14. Given [[1,2,3],[4,5,6],[7,8,9]] — get the diagonal elements [1,5,9] using enumerate() in a comprehension.
+# 
+# 15. Given a list of words ["python", "java", "javascript", "ruby", "go", "rust", "swift"] — group by first letter into a dict {"p": ["python"], "j": ["java", "javascript"], ...} using defaultdict or the manual pattern.
