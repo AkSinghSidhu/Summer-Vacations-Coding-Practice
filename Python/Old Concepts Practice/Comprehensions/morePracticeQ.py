@@ -101,8 +101,8 @@ para = "Artificial intelligence is transforming the way people work, learn, and 
 
 words_list = [item.strip(",.") for item in para.split()]
 unique_words = set(words_list)
-reoccuring_words = {word for word in unique_words if words_list.count(word) > 1}
-print(reoccuring_words)
+recurring_words = {word for word in unique_words if words_list.count(word) > 1}
+print(recurring_words)
 
 # 7. Given {"fruits": ["apple", "banana", "mango"], "veggies": ["carrot", "spinach"], "grains": ["rice", "wheat", "oats"]} — flatten all items into one list. Then count total items per category as a separate dict.
 groceries_dict = {"fruits": ["apple", "banana", "mango"], "veggies": ["carrot", "spinach"], "grains": ["rice", "wheat", "oats"]}
@@ -117,9 +117,34 @@ unique_skills = {skill for student in student_skills for skill in student["skill
 print(unique_skills)
 
 # 9. Given [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5] — without using Counter or set(), find duplicate numbers (appear more than once) using only a dict.
-# 
+number_list = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
+count_dict = {}
+for num in number_list:
+    if num in count_dict:
+        count_dict[num] += 1
+    else:
+        count_dict[num] = 1
+
+recurring_num = {num: counter for num, counter in count_dict.items() if counter > 1}
+print(recurring_num)
+
 # 10. Given a string "aabbccddee" — count each character's frequency and return only characters that appear exactly twice.
-# 
+abcde_string = "aabbccddee"
+unique_letter = set(abcde_string)
+double_letters = {letter for letter in unique_letter if abcde_string.count(letter) == 2}
+print(double_letters)
+
+    # or more optimised version:
+
+frequency_dict = {}
+for letter in abcde_string:
+    if letter in frequency_dict:
+        frequency_dict[letter] += 1
+    else:
+        frequency_dict[letter] = 1
+double_dict = {letter for letter in frequency_dict if frequency_dict[letter] == 2}
+print(double_dict)
+
 # 11. Given [{"product": "laptop", "sold": 5}, {"product": "mouse", "sold": 20}, {"product": "keyboard", "sold": 8}] — calculate total units sold, find best seller, and sort by sold descending. Three separate operations.
 # 
 # 12. Given two lists ["a", "b", "c", "d"] and [1, 2, 3, 4] — zip them into a dict. Then swap keys and values. Both in one line each.
