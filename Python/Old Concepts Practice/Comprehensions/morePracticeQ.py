@@ -146,9 +146,23 @@ double_dict = {letter for letter in frequency_dict if frequency_dict[letter] == 
 print(double_dict)
 
 # 11. Given [{"product": "laptop", "sold": 5}, {"product": "mouse", "sold": 20}, {"product": "keyboard", "sold": 8}] — calculate total units sold, find best seller, and sort by sold descending. Three separate operations.
-# 
+from functools import reduce
+products = [{"product": "laptop", "sold": 5}, {"product": "mouse", "sold": 20}, {"product": "keyboard", "sold": 8}]
+sorted_by_sale = sorted(products, key = lambda unit: unit["sold"], reverse = True)
+print(sorted_by_sale)
+best_seller = sorted_by_sale[0]["product"]
+print(best_seller)
+total_sale = reduce(lambda acc, curr: acc + curr["sold"], sorted_by_sale, 0)
+print(total_sale)
+
 # 12. Given two lists ["a", "b", "c", "d"] and [1, 2, 3, 4] — zip them into a dict. Then swap keys and values. Both in one line each.
-# 
+letter_list = ["a", "b", "c", "d"]
+digit_list = [1, 2, 3, 4]
+zipped_dict = dict(zip(letter_list, digit_list))
+print(zipped_dict)
+reversed_zipped_dict = dict(zip(digit_list, letter_list))
+print(reversed_zipped_dict)
+
 # 13. Given {"name": "Akash", "age": 22, "city": "Delhi", "score": 88, "active": True} — split into two dicts: one with string values only, one with non-string values only.
 # 
 # 14. Given [[1,2,3],[4,5,6],[7,8,9]] — get the diagonal elements [1,5,9] using enumerate() in a comprehension.
