@@ -164,7 +164,16 @@ reversed_zipped_dict = dict(zip(digit_list, letter_list))
 print(reversed_zipped_dict)
 
 # 13. Given {"name": "Akash", "age": 22, "city": "Delhi", "score": 88, "active": True} — split into two dicts: one with string values only, one with non-string values only.
-# 
+main_dict = {"name": "Akash", "age": 22, "city": "Delhi", "score": 88, "active": True}
+string_val_dict = {key: val for key, val in main_dict.items() if isinstance(val, str)}
+non_string_dict = {key: val for key, val in main_dict.items() if not isinstance(val, str)}
+print(string_val_dict)
+print(non_string_dict)
+
 # 14. Given [[1,2,3],[4,5,6],[7,8,9]] — get the diagonal elements [1,5,9] using enumerate() in a comprehension.
-# 
+nums_list = [[1,2,3],[4,5,6],[7,8,9]]
+diagonal_nums = [row[idx] for idx, row in enumerate(nums_list)]
+print(diagonal_nums)
+
 # 15. Given a list of words ["python", "java", "javascript", "ruby", "go", "rust", "swift"] — group by first letter into a dict {"p": ["python"], "j": ["java", "javascript"], ...} using defaultdict or the manual pattern.
+lang_list = ["python", "java", "javascript", "ruby", "go", "rust", "swift"]
