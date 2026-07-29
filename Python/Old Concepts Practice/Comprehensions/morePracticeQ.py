@@ -176,4 +176,11 @@ diagonal_nums = [row[idx] for idx, row in enumerate(nums_list)]
 print(diagonal_nums)
 
 # 15. Given a list of words ["python", "java", "javascript", "ruby", "go", "rust", "swift"] — group by first letter into a dict {"p": ["python"], "j": ["java", "javascript"], ...} using defaultdict or the manual pattern.
+from collections import defaultdict
 lang_list = ["python", "java", "javascript", "ruby", "go", "rust", "swift"]
+letter_dict = defaultdict(list)
+for lang in lang_list:
+    first_letter = lang[0]
+    letter_dict[first_letter].append(lang)
+
+print(dict(letter_dict))
