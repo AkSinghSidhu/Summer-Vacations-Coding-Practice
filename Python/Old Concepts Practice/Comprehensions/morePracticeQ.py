@@ -184,3 +184,38 @@ for lang in lang_list:
     letter_dict[first_letter].append(lang)
 
 print(dict(letter_dict))
+
+#---------------------------------------------------------------
+from functools import reduce
+# 1. Given this dict of student grades:
+students = {
+    "Akash": [88, 92, 75, 60, 95],
+    "Priya": [70, 85, 90, 78, 82],
+    "Ravi": [55, 60, 45, 70, 65],
+    "Neha": [95, 98, 92, 88, 97]
+}
+# Calculate average score for each student as a new dict
+avg_score = {name: reduce(lambda x, y: x + y, marks) / len(marks) for name, marks in students.items()}
+print(avg_score)
+
+# Find the student with highest average
+highest_avg = max(avg_score, key = lambda name: avg_score[name])
+print(highest_avg)
+
+# Get students who are passing (average >= 70) as a list of names
+passing_students = [name for name in avg_score if avg_score[name] >= 70]
+print(passing_students)
+
+# 2. Given:
+inventory = [
+    {"item": "apple", "category": "fruit", "qty": 50},
+    {"item": "carrot", "category": "vegetable", "qty": 30},
+    {"item": "banana", "category": "fruit", "qty": 20},
+    {"item": "spinach", "category": "vegetable", "qty": 15},
+    {"item": "mango", "category": "fruit", "qty": 40},
+]
+# Find total quantity per category
+
+
+# Group items by category into {"fruit": [...], "vegetable": [...]}
+# Find the item with lowest quantity in each category
