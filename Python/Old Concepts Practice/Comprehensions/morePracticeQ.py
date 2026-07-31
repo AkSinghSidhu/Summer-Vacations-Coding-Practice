@@ -215,7 +215,31 @@ inventory = [
     {"item": "mango", "category": "fruit", "qty": 40},
 ]
 # Find total quantity per category
+total_qty = {}
+for item in inventory:
+    item_cat = item["category"]
+    if item_cat in total_qty:
+        total_qty[item_cat] += item["qty"]
+    else:
+        total_qty[item_cat] = item["qty"]
 
+print(total_qty)
 
 # Group items by category into {"fruit": [...], "vegetable": [...]}
+item_category = defaultdict(list)
+for item in inventory:
+    item_cat = item["category"]
+    item_category[item_cat].append(item["item"])
+
+print(dict(item_category))
+
 # Find the item with lowest quantity in each category
+lowest = {}
+for item in inventory:
+    item_cat = item["category"]
+    if item_cat not in lowest:
+        lowest[item_cat] = item
+    elif item["qty"] < lowest[item_cat]["qty"]:
+        lowest[item_cat] = item
+
+print(lowest)
