@@ -243,3 +243,28 @@ for item in inventory:
         lowest[item_cat] = item
 
 print(lowest)
+
+#3. Given a string "Programming is fun and programming makes you think. Fun problems make better programmers." — do all of this:
+sentence = "Programming is fun and programming makes you think. Fun problems make better programmers."
+
+# Count frequency of each word (case-insensitive, strip punctuation)
+words = [word.strip(",.").lower() for word in sentence.split()]
+frequency = {}
+for word in words:
+    if word in frequency:
+        frequency[word] += 1
+    else:
+        frequency[word] = 1
+print(frequency)
+
+# Find words that appear exactly once
+unique_word = {word for word, count in frequency.items() if count == 1}
+print(unique_word)
+
+# Find the top 3 most frequent words
+top_three = dict(sorted(frequency.items(), key = lambda word: word[1], reverse = True)[:3])
+print(top_three)
+
+# Build a dict of {word: "common"} if it appears more than once, {word: "rare"} if exactly once
+common_word = {word: ("common" if count > 1 else "rare") for word, count in frequency.items()}
+print(common_word)
