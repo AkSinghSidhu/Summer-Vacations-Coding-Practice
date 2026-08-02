@@ -268,3 +268,34 @@ print(top_three)
 # Build a dict of {word: "common"} if it appears more than once, {word: "rare"} if exactly once
 common_word = {word: ("common" if count > 1 else "rare") for word, count in frequency.items()}
 print(common_word)
+
+# 4. Given:
+employees = [
+    {"name": "Akash", "dept": "Engineering", "salary": 85000},
+    {"name": "Priya", "dept": "Design", "salary": 72000},
+    {"name": "Ravi", "dept": "Engineering", "salary": 91000},
+    {"name": "Neha", "dept": "Marketing", "salary": 68000},
+    {"name": "Arjun", "dept": "Design", "salary": 78000},
+    {"name": "Simran", "dept": "Engineering", "salary": 95000},
+    {"name": "Karan", "dept": "Marketing", "salary": 71000},
+]
+
+# Find average salary per department
+dept_salary = defaultdict(int)
+dept_count = defaultdict(int)
+
+for employee in employees:
+    dept = employee["dept"]
+    dept_salary[dept] += employee["salary"]
+    dept_count[dept] += 1
+
+avg_salary = {
+    dept: dept_salary[dept] / dept_count[dept]
+    for dept in dept_salary
+}
+
+print(avg_salary)
+
+# Find the highest paid employee in each department
+# Find departments where average salary exceeds 75000
+# Sort employees by salary descending and print names only
