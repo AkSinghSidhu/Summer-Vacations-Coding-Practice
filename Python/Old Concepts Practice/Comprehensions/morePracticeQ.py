@@ -297,5 +297,22 @@ avg_salary = {
 print(avg_salary)
 
 # Find the highest paid employee in each department
+# Find the highest paid employee in each department
+top_earner = {}
+
+for employee in employees:
+    dept = employee["dept"]
+
+    if dept not in top_earner or employee["salary"] >= top_earner[dept]["salary"]:
+        top_earner[dept] = {
+            "name": employee["name"],
+            "salary": employee["salary"]
+        }
+
+print(top_earner)
+
 # Find departments where average salary exceeds 75000
+rich_dept = [dept for dept, salary in avg_salary.items() if salary > 75000]
+print(rich_dept)
+
 # Sort employees by salary descending and print names only
