@@ -316,3 +316,10 @@ rich_dept = [dept for dept, salary in avg_salary.items() if salary > 75000]
 print(rich_dept)
 
 # Sort employees by salary descending and print names only
+sorted_salary = sorted(employees, key = lambda x: x["salary"], reverse = True)
+print([employee["name"] for employee in sorted_salary])
+
+# or
+
+employees_by_salary = [employee["name"] for employee in sorted(employees, key = lambda x: x["salary"], reverse = True)]
+print(employees_by_salary)
